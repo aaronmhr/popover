@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="poppy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cB-uu-PhD">
+                                <rect key="frame" x="90" y="318" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="2Kq-JY-mL6"/>
+                                    <constraint firstAttribute="height" constant="30" id="DJC-qF-8HG"/>
+                                </constraints>
+                                <state key="normal" title="Button 1"/>
+                                <connections>
+                                    <action selector="buttonPopover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ml-6g-rhq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jJ-gq-WEd">
+                                <rect key="frame" x="157" y="318" width="59" height="30"/>
+                                <color key="backgroundColor" red="0.14901960780000001" green="0.72549019609999998" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="i8H-vC-dIY"/>
+                                    <constraint firstAttribute="width" constant="59" id="zGp-2r-vCB"/>
+                                </constraints>
+                                <state key="normal" title="Button 2"/>
+                                <connections>
+                                    <action selector="buttonPopover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eys-Fx-wlS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ha-8p-LeF">
+                                <rect key="frame" x="226" y="318" width="59" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="L20-dX-4wn"/>
+                                    <constraint firstAttribute="height" constant="30" id="jQj-ae-i9I"/>
+                                </constraints>
+                                <state key="normal" title="Button 3"/>
+                                <connections>
+                                    <action selector="buttonPopover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nh8-eE-sVe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFT-Hk-Cih">
+                                <rect key="frame" x="295" y="318" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EFc-IG-mdg"/>
+                                    <constraint firstAttribute="width" constant="60" id="Mcd-9a-3CO"/>
+                                </constraints>
+                                <state key="normal" title="Button 4"/>
+                                <connections>
+                                    <action selector="buttonPopover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uEf-Je-6gp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AFT-Hk-Cih" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="298" id="1YV-06-ZS4"/>
+                            <constraint firstItem="5ha-8p-LeF" firstAttribute="leading" secondItem="3jJ-gq-WEd" secondAttribute="trailing" constant="10" id="3T9-7o-HdY"/>
+                            <constraint firstItem="5ha-8p-LeF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="298" id="6Wp-4z-XEW"/>
+                            <constraint firstItem="6cB-uu-PhD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="298" id="AtR-XG-SrY"/>
+                            <constraint firstItem="3jJ-gq-WEd" firstAttribute="leading" secondItem="6cB-uu-PhD" secondAttribute="trailing" constant="10" id="BFA-Uw-phm"/>
+                            <constraint firstItem="AFT-Hk-Cih" firstAttribute="leading" secondItem="5ha-8p-LeF" secondAttribute="trailing" constant="10" id="TAI-Ek-bxf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AFT-Hk-Cih" secondAttribute="trailing" constant="20" id="nW4-tS-DwH"/>
+                            <constraint firstItem="3jJ-gq-WEd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="298" id="off-09-jJo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="6cB-uu-PhD" id="q4A-2D-9By"/>
+                        <outlet property="button2" destination="3jJ-gq-WEd" id="EiQ-f7-Aha"/>
+                        <outlet property="button3" destination="5ha-8p-LeF" id="md6-FN-j2c"/>
+                        <outlet property="button4" destination="AFT-Hk-Cih" id="aoB-vS-55U"/>
+                        <outlet property="constrain2" destination="3T9-7o-HdY" id="DgH-rE-k7h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="32"/>
+        </scene>
+        <!--PopVC-->
+        <scene sceneID="fbj-tD-3tL">
+            <objects>
+                <viewController storyboardIdentifier="popVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I3c-LK-Uhy" customClass="PopVC" customModule="poppy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="popVC" id="e6w-D5-XY5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3N-qE-Xzc">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="popoverAction:" destination="I3c-LK-Uhy" eventType="touchUpInside" id="7nW-da-HMH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0s-tk-RSe">
+                                <rect key="frame" x="218" y="318" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XmJ-7v-1Fr"/>
+                                    <constraint firstAttribute="width" constant="70" id="oeN-ym-CfO"/>
+                                </constraints>
+                                <state key="normal" title="reposition">
+                                    <color key="titleColor" red="0.92935490610000004" green="0.59158984010000004" blue="0.18997326789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="reposition:" destination="I3c-LK-Uhy" eventType="touchUpInside" id="Xh4-Sj-lm9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J0s-tk-RSe" firstAttribute="centerY" secondItem="e6w-D5-XY5" secondAttribute="centerY" id="Cqa-Q6-rPT"/>
+                            <constraint firstItem="y3N-qE-Xzc" firstAttribute="centerY" secondItem="e6w-D5-XY5" secondAttribute="centerY" id="WgO-wH-Uvm"/>
+                            <constraint firstItem="y3N-qE-Xzc" firstAttribute="centerX" secondItem="e6w-D5-XY5" secondAttribute="centerX" id="em0-gl-CQj"/>
+                            <constraint firstItem="J0s-tk-RSe" firstAttribute="leading" secondItem="y3N-qE-Xzc" secondAttribute="trailing" constant="8" id="gPb-s1-IM4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FVa-3v-5Qi"/>
+                    </view>
+                    <connections>
+                        <outlet property="popoverButton" destination="y3N-qE-Xzc" id="dlr-kq-yZz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPD-br-KNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="32"/>
+        </scene>
+    </scenes>
+</document>
